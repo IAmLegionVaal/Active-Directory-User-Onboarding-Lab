@@ -32,6 +32,10 @@ A completed Active Directory lab in which I created and configured a new domain 
 8. Tested access to approved resources and denial from unauthorized resources.
 9. Reviewed the account attributes and group memberships after validation.
 
+## Repairs and remediation performed
+
+The first sign-in test showed that the account did not receive all intended resources. I corrected the user’s OU placement, role-based group membership and home-folder path, refreshed the logon token with a new sign-in and repeated the drive and resource-access tests. Approved access then worked while unauthorized access remained blocked.
+
 ## Validation commands
 
 ```powershell
@@ -75,6 +79,8 @@ The new user successfully authenticated to the domain, received the intended gro
 - No real user identity or credential is included.
 - All names, groups and paths are placeholders or generalized.
 - The lab was completed in a controlled non-production environment.
+
+**This was tested by me to be working. User experience may vary.**
 
 ## Author
 
